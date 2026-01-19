@@ -1,7 +1,7 @@
 
 PROJECT: GAME STORE SYSTEM
 
-==============================
+
  Game Store Project
 ==============================
 

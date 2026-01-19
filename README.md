@@ -126,7 +126,9 @@ JWT_SECRET=your_secret_key
 ------------------------------
 
 -cd backend
+
 -npm install
+
 -npm run dev
 
 Backend will run at:
@@ -137,7 +139,9 @@ http://localhost:3000
 ------------------------------
 
 -cd frontend
+
 -npm install
+
 -npm run dev
 
 Frontend will run at:

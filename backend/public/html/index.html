@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Gamehouse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../styles/index.css">
+</head>
+<body>
+    <h1 id="main_title">CRUD Gamehouse</h1>
+    <div class="container">
+      <div class="box1">
+          <h2>Produtos</h2>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD Produto</button>
+          <button class="btn btn-primary search-button-js">Buscar</button>
+          <button class="btn btn-primary" id="btnReport">Gerar Relatório</button>
+          <input type="text" class ="hidden form-control mb-3 search-js" placeholder="Buscar Nome">
+        <table class="table table-hover table-bordered table-striped">
+          <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>Fabricante/Produtora</th>
+                <th>Preço</th>
+                <th>Descrição</th>
+                <th>Estoque</th>
+                <th>Garantia(meses)</th>
+                <th>Código de Barras</th>
+                <th>Atualizar</th>
+                <th>Deletar</th>
+            </tr>
+          </thead>
+          <tbody class="products-table-js">
+          </tbody>
+        </table>
+
+        <div class="success-handler-js"></div>
+        <div class="report-container mt-3"></div>
+
+      <form id="formProduto">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">ADD Produto</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                      <div class="form-group">
+                          <label for="nome">Nome</label>
+                          <input type="text" name="nome" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <label for="tipo">Tipo</label>
+                          <input type="text" name="tipo" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <label for="fabricante">Fabricante/Produtora</label>
+                          <input type="text" name="fabricante" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <label for="preco">Preço</label>
+                          <input type="text" name="preco" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <label for="descricao">Descrição</label>
+                          <input type="text" name="descricao" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <label for="estoque">Estoque</label>
+                          <input type="text" name="estoque" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <label for="garantia_meses">Garantia(meses)</label>
+                          <input type="text" name="garantia_meses" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <label for="codigo_barras">Código de Barras</label>
+                          <input type="text" name="codigo_barras" class="form-control">
+                      </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <input type="submit" class="btn btn-success" name="ADD Produtos" value="ADD">
+              </div>
+            </div>
+          </div>
+        </div>
+     </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../data/products.js"></script>
+    <script src="../index.js"></script>
+</body>
+</html>

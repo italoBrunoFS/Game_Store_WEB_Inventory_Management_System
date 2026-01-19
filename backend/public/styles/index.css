@@ -1,0 +1,28 @@
+#main_title{
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.box1 h2{
+  float: left;
+}
+
+.box1 button{
+  float: right;
+  margin-left: 10px;
+}
+
+.box1 input{
+  float: right;
+}
+.hidden{
+  display: none;
+}
+
+.container{
+  margin-top: 50px;
+}

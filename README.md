@@ -77,7 +77,7 @@ Frontend structure:
 ------------------------------
  Project Structure
 ------------------------------
-
+```
 Project Game Store
 ├── backend
 │   ├── controllers
@@ -95,7 +95,7 @@ Project Game Store
     │   ├── utils
     │   └── main.jsx
     └── vite.config.js
-
+```
 ------------------------------
  How to Run the Project
 ------------------------------
@@ -119,6 +119,7 @@ DB_USER=your_user
 DB_PASSWORD=your_password
 DB_NAME=your_database
 JWT_SECRET=your_secret_key
+```
 
 ------------------------------
  Running the Backend
